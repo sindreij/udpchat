@@ -1,0 +1,12 @@
+[package]
+name = "udpchat"
+version = "0.1.0"
+authors = ["Sindre Ilebekk Johansen <sindre@sindrejohansen.no>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "0.2.11", features=["udp", "macros", "rt-threaded", "dns", "io-std", "io-util"] }
+anyhow = "1.0.26"
+futures = "0.3.4"
